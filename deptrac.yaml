@@ -1,0 +1,13 @@
+deptrac:
+  paths:
+    - ./src
+
+  layers:
+    - name: Api
+      collectors:
+        - type: className
+          regex: .*App\\Api\\.*
+    - name: Common
+      collectors:
+        - type: className
+          regex: .*App\\Common\\.*
